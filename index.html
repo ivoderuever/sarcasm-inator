@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="all">
+        <meta name="language" content="English">
+        <meta name="author" content="ivo de ruever">
+        <meta name="description" content="Colorr a webpage where you can see random generated colors.">
+        <meta name="keywords" content="colorr, colorgen, generator, colorgenerator, color generator, color, colors, ivo de ruever, ivo, random, random colors">
+        <meta name="copyright" content="copyright">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" content="#082837">
+        <title>Sarcasm-inator</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="messagebox">
+            <div class="message">
+            </div>
+        </div>
+        <header>
+            <h1>Sarcasm-inator</h1>
+        </header>
+        <main>
+            <div id="input" class="center-container">
+                <h2>What need to be sarcastified?</h2>
+                <div class="input-button">
+                    <input id="word" class="input" type="text" pattern="[A-Za-z]" placeholder="e.g. You look nice!">
+                    <button id="process" class="button"><i class="fas fa-arrow-right icon"></i></button>
+                </div>
+            </div>
+            <div id="result" class="center-container hidden">
+                <h2 id="endword" class="copy"></h2>
+                <button id="tryAgain" class="button">Sarcastify again</button>
+                <p style="padding-top: 20px;">Click the sarcastified text to copy.</p>
+            </div>
+        </main>
+        <footer>
+            <h3>&copy; 2019 <a title="Portfolio" class="link" target="_blank" href="https://deruever.nl/">Ivo de Ruever</a></h3>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
