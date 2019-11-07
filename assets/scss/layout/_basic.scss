@@ -21,3 +21,27 @@
         max-width: 100%;
         height: auto;
     }
+
+    .messagebox {
+        z-index: 4;
+        position: absolute;
+        top: -50px;
+        width: 100%;
+        transition: all 0.2s ease;
+        
+        .message {
+            max-width: 300px;
+            padding: 5px 0;
+            border-radius: 10px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.5em;
+            background-color: $pureblack;
+            color: $justwhite;
+        }
+    }
+    
+    .messagebox-open {
+        top: 10px;
+        transition: all 0.2s ease;
+    }

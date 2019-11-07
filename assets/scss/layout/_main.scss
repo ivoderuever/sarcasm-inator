@@ -11,12 +11,46 @@ main {
         background: $almostblack;
         width: 300px;
         padding: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
 
         h2 {
             font-weight: 500;
             font-size: 1.6em;
             text-align: center;
             padding: 10px 10px;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        .button{
+            @extend %button;
+            margin: 0 auto;
+        }
+
+        .copy:after {
+            position: absolute;
+            margin-left: 5px;
+            font-family: "Font Awesome 5 Free";
+            content: "\F328";
+            font-weight: 400;
+            font-size: 0.6em;
+            top: 20px;
+            opacity: 0;
+            transition: all 0.2s ease;
+        }
+          
+        .copy:hover:after {
+            opacity: 1;
+            transition: all 0.2s ease;
+        }
+
+        .symbol:after {
+            font-weight: 900;
+            transition: all 0.2s ease;
         }
     }
 
