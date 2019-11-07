@@ -1,0 +1,41 @@
+%input {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1em;
+    padding: 7px 10px 7px 10px;
+    color: $justwhite;
+    width: 200px;
+    transition: all 0.2s ease;
+
+    &::placeholder {
+        color: $justwhite;
+    }
+
+    &:focus {
+        background-color: $lightblack;
+        color: $justwhite;
+        border-color: $justwhite;
+        outline: none;
+        transition: all 0.2s ease;
+
+        &::placeholder {
+            color: $justwhite;
+        }
+    }
+}
+
+%button {
+    font-family: inherit;
+    font-size: 1em;
+    padding: 7px 25px;
+    background-color: $justwhite;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+        transition: all 0.2s ease;
+        background-color: $justwhite;        
+    }
+}

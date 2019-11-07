@@ -1,0 +1,44 @@
+main {
+    position: relative;
+    height: calc(100vh - 120px);
+
+    .center-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        background: $almostblack;
+        width: 300px;
+        padding: 20px;
+
+        h2 {
+            font-weight: 500;
+            font-size: 1.6em;
+            text-align: center;
+            padding: 10px 10px;
+        }
+    }
+
+    .input-button {
+        display: inline-block;
+        border: 2px solid $justwhite;
+
+        .input {
+            @extend %input;
+            margin: 0 auto;
+        }
+
+        .button {
+            @extend %button;
+
+            .icon {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+}
